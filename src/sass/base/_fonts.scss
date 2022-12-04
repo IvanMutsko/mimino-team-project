@@ -1,0 +1,12 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Film P3';
+  src: local('../fonts/Film P3 Bold'), local('../fonts/Film-P3-Bold'),
+    url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff'),
+    url('../fonts/FilmP3Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
