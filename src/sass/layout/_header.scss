@@ -1,0 +1,89 @@
+.header {
+  background-color: #746c6c;
+
+  padding: 16px 15px;
+  min-width: 414px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-header {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+
+  .item {
+    list-style: none;
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+.nav-link {
+  display: flex;
+  .icon-wrap {
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+  }
+  .icon {
+    fill: #f3c653;
+  }
+}
+
+.address-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 8px 6px;
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  .icon-wrap {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    align-items: center;
+  }
+
+  .icon {
+    fill: #f3c653;
+  }
+}
+.header-address {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+
+  width: 100%;
+  height: 100%;
+}
