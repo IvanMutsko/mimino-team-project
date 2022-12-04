@@ -3,24 +3,4 @@
 // base styles
 @import './base/base';
 
-// test styles
-.title {
-  font-size: 100px;
-  padding-top: 50px;
-  text-align: center;
-  font-family: 'Film P3', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 20px;
-}
-
-.text {
-  margin-top: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
-  line-height: 1.4;
-  text-align: center;
-  font-weight: 500;
-}
+@import './layout/header';
