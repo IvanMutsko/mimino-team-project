@@ -3,6 +3,16 @@
 
   padding: 16px 15px;
   min-width: 414px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    padding: 30px 47px;
+    width: 1024px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 30px 85px;
+    width: 1280px;
+  }
 }
 
 .header-wrap {
@@ -19,6 +29,14 @@
   line-height: 1.08;
   letter-spacing: 0.3em;
   color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    color: #fffdee;
+  }
+  @media screen and (min-width: 1280px) {
+    color: #ffffff;
+  }
 }
 
 .icon-wrap {
@@ -36,23 +54,78 @@
   letter-spacing: 0.02em;
   color: #f3c653;
 
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   .item {
+    display: flex;
     list-style: none;
+    align-items: center;
     &:first-child {
       margin-right: 20px;
+
+      @media screen and (min-width: 1024px) {
+        margin-right: 72px;
+      }
     }
+  }
+  .tel-wrap {
+    display: flex;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+
+    @media screen and (min-width: 1024px) {
+      margin-left: 0;
+      align-items: center;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+
+      color: #ffffff;
+    }
+
+    .tel-subwrap {
+      display: flex;
+      align-items: center;
+
+      .tel:last-child {
+        margin-left: 16px;
+      }
+    }
+
+    .tel {
+      @media screen and (max-width: 1023.5px) {
+        display: none;
+      }
+      
+      @media screen and (min-width: 1024px) {
+        margin-left: 8px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
+
+      width: auto;
+      height: auto;
+      padding: 8px;
+    }
+  }
+  .icon {
+    fill: #f3c653;
   }
 }
 
 .nav-link {
-  display: flex;
-  .icon-wrap {
-    width: 24px;
-    height: 24px;
-    margin-left: 6px;
-  }
-  .icon {
-    fill: #f3c653;
+  @media screen and (min-width: 1024px) {
+    margin-right: 32px;
   }
 }
 
@@ -77,6 +150,13 @@
     fill: #f3c653;
   }
 }
+
+.address-link {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
 .header-address {
   font-family: 'Montserrat';
   font-size: 12px;
@@ -86,4 +166,19 @@
 
   width: 100%;
   height: 100%;
+}
+
+.social-list {
+  display: none;
+
+  list-style: none;
+  gap: 20px;
+
+  .icon {
+    fill: #f3c653;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+  }
 }
